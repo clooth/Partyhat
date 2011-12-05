@@ -14,13 +14,13 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "partyhat"
-  gem.homepage = "http://github.com/Clooth/partyhat"
-  gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "zenverse@gmail.com"
-  gem.authors = ["Nico Hämäläinen"]
+  gem.name        = "partyhat"
+  gem.homepage    = "http://github.com/clooth/partyhat"
+  gem.license     = "MIT"
+  gem.summary     = %Q{General Runescape Gem}
+  gem.description = %Q{Versatile runescape gem offering useful tools for runescape-related apps}
+  gem.authors     = ["clooth"]
+  gem.email       = "zenverse@gmail.com"
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
