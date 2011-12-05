@@ -1,15 +1,13 @@
 class Partyhat::Activity < Partyhat::Stat
-  @name       = nil
-  @score      = nil
-  @rank 			= nil
+  @name  = nil
+  @score = nil
+  @rank  = nil
 
   def initialize name, score, rank
     raise ArgumentError, 'Invalid activity name' unless ActivitiesList.include? name
-    @name       = name
-
-    # Nilify negative values
-    @score      = score < 0 ? nil : score
-    @rank       = rank < 0 ? nil : rank
+    @name  = name
+    @score = score < 0 ? nil : score
+    @rank  = rank < 0 ? nil : rank
   end
 
   def name

@@ -1,6 +1,6 @@
 class Partyhat::Stat
-	# List of skills that appear in the highscores
-	SkillsList = [
+  # List of skills that appear in the highscores
+  SkillsList = [
     :attack,
     :defence,
     :strength,

@@ -35,6 +35,6 @@ class Partyhat::Skill < Partyhat::Stat
   end
 
   def compare_to another_skill
-    SkillComparison.new(self, another_skill)
+    Partyhat::SkillComparison.new(self, another_skill)
   end
 end
