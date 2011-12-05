@@ -14,6 +14,7 @@ class Partyhat::Util
 
   # Convert a level value into experience
   # Uses a formula from somewhere.
+  # FIXME: This is not accurate, check partyhat_util_spec results
   # TODO: Add source for formula.
   def self.level_to_experience level
     experience = 0
