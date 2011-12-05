@@ -25,4 +25,8 @@ class Partyhat::Activity < Partyhat::Stat
   def rank
     @rank
   end
+
+  def compare_to another_activity
+    Partyhat::ActivityComparison.new(self, another_activity)
+  end
 end
