@@ -1,8 +1,6 @@
 = Partyhat
 == usage
 
-Install the gem via `gem install partyhat`
-
   require 'partyhat'
   first_skill  = Partyhat::Skill.new(:attack, 99, 23_784_441, 2509)
   second_skill = Partyhat::Skill.new(:attack, 99, 16_700_194, 6492)
