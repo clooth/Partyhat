@@ -20,10 +20,16 @@ describe "Partyhat::Util" do
     }
   end
 
-  it "should successfully convert experience to level" do
-    @sliding_experiences.each do |key, value|
-      converted = Partyhat::Util.experience_to_level(value)
-      converted.should eq(key)
+  context "Experience to Level" do
+    it "should successfully convert experience to level" do
+      @sliding_experiences.each do |key, value|
+        converted = Partyhat::Util.experience_to_level(value)
+        converted.should eq(key)
+      end
+    end
+
+    it "should return a maximum level of 200" do
+      Partyhat::Util.experience_to_level(500_000_000_000).should eq(200)
     end
   end
 
