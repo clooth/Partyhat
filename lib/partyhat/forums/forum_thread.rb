@@ -1,5 +1,7 @@
 module Partyhat
   module Forums
+    # TODO: Add pagination support
+    #       e.g. thread.next_page
     class ForumThread
       URL_FORMAT = 'http://services.runescape.com/m=forum/forums.ws?%s'
       @posts     = []
