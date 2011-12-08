@@ -7,6 +7,7 @@ module Partyhat
       @qfc       = nil
 
       def initialize qfc
+        raise InvalidArgumentError('Invalid quick find code') unless Forums.valid_qfc?(qfc)
         @posts = []
         @qfc   = qfc
         @link  = URL_FORMAT % qfc.gsub(/-/, ",")
