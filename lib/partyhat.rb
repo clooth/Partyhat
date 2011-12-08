@@ -1,4 +1,4 @@
-class Partyhat
+module Partyhat
 end
 
 require 'partyhat/util'
@@ -7,3 +7,6 @@ require 'partyhat/skill'
 require 'partyhat/skill_comparison'
 require 'partyhat/activity'
 require 'partyhat/activity_comparison'
+require 'partyhat/forums'
+require 'partyhat/forums/forum_post'
+require 'partyhat/forums/forum_thread'
