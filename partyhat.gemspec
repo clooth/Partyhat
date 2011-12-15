@@ -39,6 +39,7 @@ Gem::Specification.new do |s|
     "lib/partyhat/skill_comparison.rb",
     "lib/partyhat/stat.rb",
     "lib/partyhat/util.rb",
+    "partyhat.gemspec",
     "spec/activity_spec.rb",
     "spec/calculators_spec.rb",
     "spec/forums_spec.rb",
