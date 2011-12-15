@@ -6,7 +6,7 @@ module Partyhat
     @rank       = nil
 
     def initialize name, level, experience, rank
-      raise ArgumentError, 'Invalid skill name' unless SkillsList.include? name
+      raise ArgumentError, 'Invalid skill name "' + name.to_s + '"' unless (SkillsList+[:overall]).include? name
       @name       = name
 
       # Nilify negative values

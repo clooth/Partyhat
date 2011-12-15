@@ -1,5 +1,6 @@
 source "http://rubygems.org"
 
+gem "curb"
 gem "nokogiri"
 
 group :development do

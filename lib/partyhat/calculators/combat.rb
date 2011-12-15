@@ -4,7 +4,7 @@ module Partyhat
     # The method defaults to runescape starter stats if any of
     # the skills are missing from the hash.
     def self.combat stats
-      return nil if stats.empty?
+      return nil if stats.nil? || stats.empty?
       # Default combat calculator stats
       default_stats = {
         :attack       => 1,

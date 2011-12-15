@@ -69,4 +69,19 @@ describe "Partyhat::Util" do
       end
     end
   end
+
+  context "Fetching remote pages" do
+    it "should be able to fetch and return a single page" do
+      url = 'http://google.com'
+      Partyhat::Util.fetch_remote(url).class.should == String
+    end
+
+    it "should be able to fetch and return multiple pages" do
+      urls = ['http://google.com', 'http://microsoft.com']
+      pages = Partyhat::Util.fetch_remote(urls)
+      pages.class.should == Hash
+      pages["http://google.com"].class.should == String
+      pages["http://microsoft.com"].class.should == String
+    end
+  end
 end

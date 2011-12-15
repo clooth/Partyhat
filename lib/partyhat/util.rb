@@ -61,5 +61,32 @@ module Partyhat
       end
       (number * (multiplier || 1)).round(1)
     end
+
+    # Fetch a remote page and return it
+    # If you pass in only one URL, direct source will be returneds
+    # If you pass in multiple URLs, a hash will be returned with url indexes
+    def self.fetch_remote urls
+      urls = [urls] unless urls.is_a?(Array)
+      responses = {}
+      m = Curl::Multi.new
+      urls.reject.each do |url|
+        responses[url] = ""
+        c = Curl::Easy.new(url) do|curl|
+          curl.follow_location = true
+          curl.on_body do |data|
+            responses[url] << data
+            data.size
+          end
+        end
+        m.add(c)
+      end
+      m.perform
+
+      if responses.size > 1
+        responses
+      else
+        responses[urls.pop]
+      end
+    end
   end
 end
