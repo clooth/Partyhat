@@ -100,6 +100,27 @@ A small utility function is also available for validating QFC codes:
 	Partyhat::Forums.valid_qfc? "13-14-933-6341873" # => true
 	Partyhat::Forums.valid_qfc? "12333-4955"        # => false
 
+# TODO:
+
+* More tests!
+* Player Comparison class
+* Add avatar urls to Player object
+* Progress to next (or given) level (or experience)
+* Find by rank and stat for highscores
+* Fetch multiple players at once (Curl.Multi)
+* More data for forums and encoding issues
+* Clan information parser (by clan name)
+* Grand Exchange class with:
+* - Item search by name
+* - Item search by id
+* - Item comparison (price)
+* Wiki search
+* Forum search
+* Runescape News Parser
+* Adventurer's Log Aggregator
+* - With support for multiple players
+* - Different order modes (by day, etc.)
+
 # Contributing to partyhat
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
