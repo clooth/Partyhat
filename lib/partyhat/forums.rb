@@ -1,6 +1,3 @@
-require 'open-uri'
-require 'nokogiri'
-
 module Partyhat
   module Forums
     QUICK_FIND_CODE_FORMAT = /^\d+-\d+-\d+-\d+$/

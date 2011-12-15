@@ -1,6 +1,9 @@
 module Partyhat
 end
 
+require 'open-uri'
+require 'curb'
+require 'nokogiri'
 require 'partyhat/util'
 require 'partyhat/stat'
 require 'partyhat/skill'

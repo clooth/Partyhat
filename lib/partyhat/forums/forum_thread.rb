@@ -13,7 +13,7 @@ module Partyhat
         @posts = []
         @qfc   = qfc
         @link  = URL_FORMAT % qfc.gsub(/-/, ",")
-        parse_from_page open(@link)
+        parse_from_page Partyhat::Util.fetch_remote(@link)
       end
 
       def title
