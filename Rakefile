@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name        = "partyhat"
   gem.homepage    = "http://github.com/clooth/partyhat"
   gem.license     = "MIT"
-  gem.summary     = %Q{General Runescape Gem}
-  gem.description = %Q{Versatile runescape gem offering useful tools for runescape-related apps}
+  gem.summary     = %Q{Offers easy to use methods for Runescape-related apps.}
+  gem.description = %Q{Helps you build runescape-apps by offering a highscores parser, forum parser, calculators and more.}
   gem.authors     = ["clooth"]
   gem.email       = "zenverse@gmail.com"
 end
