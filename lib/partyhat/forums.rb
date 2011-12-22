@@ -8,3 +8,6 @@ module Partyhat
     end
   end
 end
+
+require 'partyhat/forums/forum_post'
+require 'partyhat/forums/forum_thread'
