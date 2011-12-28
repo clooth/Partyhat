@@ -33,11 +33,11 @@ module Partyhat
       # Everything should be good
       else
         @score = @second_activity.score - @first_activity.score
-        @rank  = @second_activity.rank - @second_activity.rank
+        @rank  = @second_activity.rank - @first_activity.rank
       end
     end
 
-    attr_reader :score, :rank
+    attr_accessor :score, :rank
 
     private
     # Make sure the two classes being compared are both instances

@@ -7,7 +7,7 @@
 module Partyhat
   module AdventurersLog
     def self.for_user(username)
-
+      
     end
   end
 end

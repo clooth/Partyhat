@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem "curb"
+gem "curb", git: "git://github.com/geronime/curb.git"
 gem "nokogiri"
 
 group :development do
