@@ -44,7 +44,7 @@ module Partyhat
       else
         divider = 1
         suffix = 'GP'
-        return (number / divider.to_i).to_s + suffix
+        return (number.to_i / divider.to_i).to_s + suffix
       end
       (number / divider.to_f).round(1).to_s + suffix
     end
