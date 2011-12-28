@@ -41,6 +41,10 @@ module Partyhat
       elsif number >= 1_000
         divider = 1_000
         suffix = 'K'
+      else
+        divider = 1
+        suffix = 'GP'
+        return (number / divider.to_i).to_s + suffix
       end
       (number / divider.to_f).round(1).to_s + suffix
     end
@@ -51,15 +55,15 @@ module Partyhat
     # Values might not stay the same if abbreviated
     # and then deabbreviated
     def self.parse_number string
-      number     = string.chop.to_f
-      ending     = string[-1, 1]
       multiplier = 1
-      case ending.upcase
+      string = string.upcase
+      ending = string[-1,1].upcase
+      case ending
         when 'B' then multiplier = 1_000_000_000
         when 'M' then multiplier = 1_000_000
         when 'K' then multiplier = 1_000
       end
-      (number * (multiplier || 1)).round(1)
+      (string.to_f * (multiplier || 1)).round(1)
     end
 
     # Fetch a remote page and return it
